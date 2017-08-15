@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -52,7 +53,13 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="welcome.blade.php">Ipsum veroeros</a></li>
+                                <li><a href="generic.blade.php">Tempus etiam</a></li>
+                                <li><a href="generic.blade.php">Consequat dolor</a></li>
+                                <li><a href="elements.blade.php">Elements</a></li>
                                     <li>
+                                        
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -67,6 +74,20 @@
                             </li>
                         @endif
                     </ul>
+                
+					
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="welcome.blade.php">Ipsum veroeros</a></li>
+							<li><a href="generic.blade.php">Tempus etiam</a></li>
+							<li><a href="generic.blade.php">Consequat dolor</a></li>
+							<li><a href="elements.blade.php">Elements</a></li>
+						</ul>
+					</nav>
+
                 </div>
             </div>
         </nav>
